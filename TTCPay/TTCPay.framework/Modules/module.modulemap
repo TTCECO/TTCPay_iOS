@@ -1,0 +1,4 @@
+framework module TTCPay {
+    header "TTCPay-Swift.h"
+    requires objc
+}

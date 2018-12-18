@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4269E87421BFC3EF0021DCDE /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4269E87321BFC3EF0021DCDE /* UIColor.swift */; };
+		4269E87821BFC53B0021DCDE /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4269E87721BFC53B0021DCDE /* UIFont.swift */; };
+		4269E88F21C0C96A0021DCDE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4269E88E21C0C96A0021DCDE /* Constants.swift */; };
+		4269E89121C0CA740021DCDE /* TTCNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4269E89021C0CA740021DCDE /* TTCNavigationController.swift */; };
+		4269E89321C0CBB10021DCDE /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4269E89221C0CBB10021DCDE /* UIImage.swift */; };
+		4269E89521C0E3970021DCDE /* TTCShoppingCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4269E89421C0E3970021DCDE /* TTCShoppingCartViewController.swift */; };
+		4269E89721C0E4E30021DCDE /* TTCBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4269E89621C0E4E30021DCDE /* TTCBaseViewController.swift */; };
+		4269E89B21C0E7BF0021DCDE /* TTCHomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4269E89A21C0E7BF0021DCDE /* TTCHomeTableViewCell.swift */; };
+		4269E89D21C10C500021DCDE /* TTCShopCartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4269E89C21C10C500021DCDE /* TTCShopCartTableViewCell.swift */; };
+		4269E89F21C1159D0021DCDE /* UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4269E89E21C1159D0021DCDE /* UIDevice.swift */; };
+		4269E8A121C20CF90021DCDE /* TTCCheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4269E8A021C20CF90021DCDE /* TTCCheckoutViewController.swift */; };
+		4269E8A321C22DE00021DCDE /* TTCCheckoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4269E8A221C22DE00021DCDE /* TTCCheckoutTableViewCell.swift */; };
+		4269E8A521C24AFD0021DCDE /* TTC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4269E8A421C24AFD0021DCDE /* TTC.swift */; };
+		4269E8A721C24D6E0021DCDE /* EtherNumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4269E8A621C24D6E0021DCDE /* EtherNumberFormatter.swift */; };
+		4269E8A921C24E000021DCDE /* EthereumUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4269E8A821C24E000021DCDE /* EthereumUnit.swift */; };
+		4269E8AB21C25E630021DCDE /* TTCTransactionInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4269E8AA21C25E630021DCDE /* TTCTransactionInfoTableViewCell.swift */; };
+		4269E8AD21C25E6A0021DCDE /* TTCTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4269E8AC21C25E6A0021DCDE /* TTCTransactionViewController.swift */; };
+		4269E8AF21C260210021DCDE /* TTCTransactionValueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4269E8AE21C260200021DCDE /* TTCTransactionValueTableViewCell.swift */; };
+		4269E8B121C3900F0021DCDE /* TTCSign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4269E8B021C3900F0021DCDE /* TTCSign.swift */; };
+		42859EB721BF9A9400354AAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42859EB621BF9A9400354AAF /* AppDelegate.swift */; };
+		42859EB921BF9A9400354AAF /* TTCHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42859EB821BF9A9400354AAF /* TTCHomeViewController.swift */; };
+		42859EBC21BF9A9400354AAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42859EBA21BF9A9400354AAF /* Main.storyboard */; };
+		42859EBE21BF9A9500354AAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42859EBD21BF9A9500354AAF /* Assets.xcassets */; };
+		42859EC121BF9A9500354AAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42859EBF21BF9A9500354AAF /* LaunchScreen.storyboard */; };
+		7D08A8FB9FF24D606B39AD99 /* Pods_TTCPayDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B80160557CC1E7B0BFA10022 /* Pods_TTCPayDemo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4269E88D21C0B7190021DCDE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4269E87321BFC3EF0021DCDE /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		4269E87721BFC53B0021DCDE /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
+		4269E88E21C0C96A0021DCDE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4269E89021C0CA740021DCDE /* TTCNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTCNavigationController.swift; sourceTree = "<group>"; };
+		4269E89221C0CBB10021DCDE /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		4269E89421C0E3970021DCDE /* TTCShoppingCartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTCShoppingCartViewController.swift; sourceTree = "<group>"; };
+		4269E89621C0E4E30021DCDE /* TTCBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTCBaseViewController.swift; sourceTree = "<group>"; };
+		4269E89A21C0E7BF0021DCDE /* TTCHomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTCHomeTableViewCell.swift; sourceTree = "<group>"; };
+		4269E89C21C10C500021DCDE /* TTCShopCartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTCShopCartTableViewCell.swift; sourceTree = "<group>"; };
+		4269E89E21C1159D0021DCDE /* UIDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDevice.swift; sourceTree = "<group>"; };
+		4269E8A021C20CF90021DCDE /* TTCCheckoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTCCheckoutViewController.swift; sourceTree = "<group>"; };
+		4269E8A221C22DE00021DCDE /* TTCCheckoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTCCheckoutTableViewCell.swift; sourceTree = "<group>"; };
+		4269E8A421C24AFD0021DCDE /* TTC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTC.swift; sourceTree = "<group>"; };
+		4269E8A621C24D6E0021DCDE /* EtherNumberFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EtherNumberFormatter.swift; sourceTree = "<group>"; };
+		4269E8A821C24E000021DCDE /* EthereumUnit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EthereumUnit.swift; sourceTree = "<group>"; };
+		4269E8AA21C25E630021DCDE /* TTCTransactionInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTCTransactionInfoTableViewCell.swift; sourceTree = "<group>"; };
+		4269E8AC21C25E6A0021DCDE /* TTCTransactionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTCTransactionViewController.swift; sourceTree = "<group>"; };
+		4269E8AE21C260200021DCDE /* TTCTransactionValueTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTCTransactionValueTableViewCell.swift; sourceTree = "<group>"; };
+		4269E8B021C3900F0021DCDE /* TTCSign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTCSign.swift; sourceTree = "<group>"; };
+		42859EB321BF9A9400354AAF /* TTCPayDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTCPayDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		42859EB621BF9A9400354AAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		42859EB821BF9A9400354AAF /* TTCHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTCHomeViewController.swift; sourceTree = "<group>"; };
+		42859EBB21BF9A9400354AAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		42859EBD21BF9A9500354AAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		42859EC021BF9A9500354AAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		42859EC221BF9A9500354AAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B1FCF7B42E8BB58C6AC5A82 /* Pods-TTCPayDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTCPayDemo.release.xcconfig"; path = "Target Support Files/Pods-TTCPayDemo/Pods-TTCPayDemo.release.xcconfig"; sourceTree = "<group>"; };
+		B80160557CC1E7B0BFA10022 /* Pods_TTCPayDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TTCPayDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC7374A1DFF7731AB2D7795C /* Pods-TTCPayDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTCPayDemo.debug.xcconfig"; path = "Target Support Files/Pods-TTCPayDemo/Pods-TTCPayDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		42859EB021BF9A9400354AAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D08A8FB9FF24D606B39AD99 /* Pods_TTCPayDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4269E86E21BFBF470021DCDE /* base */ = {
+			isa = PBXGroup;
+			children = (
+				4269E89021C0CA740021DCDE /* TTCNavigationController.swift */,
+				4269E89621C0E4E30021DCDE /* TTCBaseViewController.swift */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		4269E87521BFC4AC0021DCDE /* util */ = {
+			isa = PBXGroup;
+			children = (
+				4269E8A821C24E000021DCDE /* EthereumUnit.swift */,
+				4269E8A621C24D6E0021DCDE /* EtherNumberFormatter.swift */,
+				4269E88E21C0C96A0021DCDE /* Constants.swift */,
+				4269E8B021C3900F0021DCDE /* TTCSign.swift */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		4269E87621BFC4B40021DCDE /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				4269E87321BFC3EF0021DCDE /* UIColor.swift */,
+				4269E87721BFC53B0021DCDE /* UIFont.swift */,
+				4269E89221C0CBB10021DCDE /* UIImage.swift */,
+				4269E89E21C1159D0021DCDE /* UIDevice.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		4269E87921BFCAD50021DCDE /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				4269E89921C0E75D0021DCDE /* view */,
+				4269E89821C0E7550021DCDE /* viewController */,
+			);
+			path = modules;
+			sourceTree = "<group>";
+		};
+		4269E89821C0E7550021DCDE /* viewController */ = {
+			isa = PBXGroup;
+			children = (
+				42859EB821BF9A9400354AAF /* TTCHomeViewController.swift */,
+				4269E89421C0E3970021DCDE /* TTCShoppingCartViewController.swift */,
+				4269E8A021C20CF90021DCDE /* TTCCheckoutViewController.swift */,
+				4269E8AC21C25E6A0021DCDE /* TTCTransactionViewController.swift */,
+			);
+			path = viewController;
+			sourceTree = "<group>";
+		};
+		4269E89921C0E75D0021DCDE /* view */ = {
+			isa = PBXGroup;
+			children = (
+				4269E89A21C0E7BF0021DCDE /* TTCHomeTableViewCell.swift */,
+				4269E89C21C10C500021DCDE /* TTCShopCartTableViewCell.swift */,
+				4269E8A221C22DE00021DCDE /* TTCCheckoutTableViewCell.swift */,
+				4269E8AA21C25E630021DCDE /* TTCTransactionInfoTableViewCell.swift */,
+				4269E8AE21C260200021DCDE /* TTCTransactionValueTableViewCell.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		42859EAA21BF9A9400354AAF = {
+			isa = PBXGroup;
+			children = (
+				42859EB521BF9A9400354AAF /* TTCPayDemo */,
+				42859EB421BF9A9400354AAF /* Products */,
+				BD20BA9915CDEA5CFF229880 /* Pods */,
+				9CEF8DF5FADCE77D6316D205 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		42859EB421BF9A9400354AAF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42859EB321BF9A9400354AAF /* TTCPayDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42859EB521BF9A9400354AAF /* TTCPayDemo */ = {
+			isa = PBXGroup;
+			children = (
+				4269E86E21BFBF470021DCDE /* base */,
+				4269E87621BFC4B40021DCDE /* extension */,
+				4269E87521BFC4AC0021DCDE /* util */,
+				4269E87921BFCAD50021DCDE /* modules */,
+				42859EB621BF9A9400354AAF /* AppDelegate.swift */,
+				4269E8A421C24AFD0021DCDE /* TTC.swift */,
+				42859EBA21BF9A9400354AAF /* Main.storyboard */,
+				42859EBD21BF9A9500354AAF /* Assets.xcassets */,
+				42859EBF21BF9A9500354AAF /* LaunchScreen.storyboard */,
+				42859EC221BF9A9500354AAF /* Info.plist */,
+			);
+			path = TTCPayDemo;
+			sourceTree = "<group>";
+		};
+		9CEF8DF5FADCE77D6316D205 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B80160557CC1E7B0BFA10022 /* Pods_TTCPayDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD20BA9915CDEA5CFF229880 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EC7374A1DFF7731AB2D7795C /* Pods-TTCPayDemo.debug.xcconfig */,
+				7B1FCF7B42E8BB58C6AC5A82 /* Pods-TTCPayDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42859EB221BF9A9400354AAF /* TTCPayDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42859EC521BF9A9500354AAF /* Build configuration list for PBXNativeTarget "TTCPayDemo" */;
+			buildPhases = (
+				1B1972293C0EAB6E0ADE78C7 /* [CP] Check Pods Manifest.lock */,
+				42859EAF21BF9A9400354AAF /* Sources */,
+				42859EB021BF9A9400354AAF /* Frameworks */,
+				42859EB121BF9A9400354AAF /* Resources */,
+				4269E88D21C0B7190021DCDE /* Embed Frameworks */,
+				8B7DED8FD412AECA4BD912BA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TTCPayDemo;
+			productName = TTCPayDemo;
+			productReference = 42859EB321BF9A9400354AAF /* TTCPayDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		42859EAB21BF9A9400354AAF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = chenchao;
+				TargetAttributes = {
+					42859EB221BF9A9400354AAF = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = 42859EAE21BF9A9400354AAF /* Build configuration list for PBXProject "TTCPayDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 42859EAA21BF9A9400354AAF;
+			productRefGroup = 42859EB421BF9A9400354AAF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42859EB221BF9A9400354AAF /* TTCPayDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		42859EB121BF9A9400354AAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42859EC121BF9A9500354AAF /* LaunchScreen.storyboard in Resources */,
+				42859EBE21BF9A9500354AAF /* Assets.xcassets in Resources */,
+				42859EBC21BF9A9400354AAF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B1972293C0EAB6E0ADE78C7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TTCPayDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B7DED8FD412AECA4BD912BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TTCPayDemo/Pods-TTCPayDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/BigInt/BigInt.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SipHash/SipHash.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftProtobuf/SwiftProtobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyRSA/SwiftyRSA.framework",
+				"${PODS_ROOT}/TTCPay/TTCPay/TTCPay.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BigInt.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SipHash.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftProtobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyRSA.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTCPay.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TTCPayDemo/Pods-TTCPayDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42859EAF21BF9A9400354AAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4269E8AD21C25E6A0021DCDE /* TTCTransactionViewController.swift in Sources */,
+				4269E89B21C0E7BF0021DCDE /* TTCHomeTableViewCell.swift in Sources */,
+				4269E89721C0E4E30021DCDE /* TTCBaseViewController.swift in Sources */,
+				4269E88F21C0C96A0021DCDE /* Constants.swift in Sources */,
+				42859EB921BF9A9400354AAF /* TTCHomeViewController.swift in Sources */,
+				4269E89521C0E3970021DCDE /* TTCShoppingCartViewController.swift in Sources */,
+				4269E8A321C22DE00021DCDE /* TTCCheckoutTableViewCell.swift in Sources */,
+				4269E87421BFC3EF0021DCDE /* UIColor.swift in Sources */,
+				4269E87821BFC53B0021DCDE /* UIFont.swift in Sources */,
+				4269E89F21C1159D0021DCDE /* UIDevice.swift in Sources */,
+				4269E8A121C20CF90021DCDE /* TTCCheckoutViewController.swift in Sources */,
+				4269E8B121C3900F0021DCDE /* TTCSign.swift in Sources */,
+				4269E8A721C24D6E0021DCDE /* EtherNumberFormatter.swift in Sources */,
+				4269E8AB21C25E630021DCDE /* TTCTransactionInfoTableViewCell.swift in Sources */,
+				4269E8AF21C260210021DCDE /* TTCTransactionValueTableViewCell.swift in Sources */,
+				4269E89D21C10C500021DCDE /* TTCShopCartTableViewCell.swift in Sources */,
+				4269E8A921C24E000021DCDE /* EthereumUnit.swift in Sources */,
+				42859EB721BF9A9400354AAF /* AppDelegate.swift in Sources */,
+				4269E89121C0CA740021DCDE /* TTCNavigationController.swift in Sources */,
+				4269E8A521C24AFD0021DCDE /* TTC.swift in Sources */,
+				4269E89321C0CBB10021DCDE /* UIImage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		42859EBA21BF9A9400354AAF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42859EBB21BF9A9400354AAF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		42859EBF21BF9A9500354AAF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42859EC021BF9A9500354AAF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		42859EC321BF9A9500354AAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		42859EC421BF9A9500354AAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		42859EC621BF9A9500354AAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC7374A1DFF7731AB2D7795C /* Pods-TTCPayDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6AS4N82Q9E;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TTCPay",
+				);
+				INFOPLIST_FILE = TTCPayDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = eco.ttc.sdk.payDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		42859EC721BF9A9500354AAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B1FCF7B42E8BB58C6AC5A82 /* Pods-TTCPayDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6AS4N82Q9E;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TTCPay",
+				);
+				INFOPLIST_FILE = TTCPayDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = eco.ttc.sdk.payDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		42859EAE21BF9A9400354AAF /* Build configuration list for PBXProject "TTCPayDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42859EC321BF9A9500354AAF /* Debug */,
+				42859EC421BF9A9500354AAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42859EC521BF9A9500354AAF /* Build configuration list for PBXNativeTarget "TTCPayDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42859EC621BF9A9500354AAF /* Debug */,
+				42859EC721BF9A9500354AAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 42859EAB21BF9A9400354AAF /* Project object */;
+}
