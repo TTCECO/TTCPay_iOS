@@ -9,7 +9,7 @@ PODS:
   - SwiftyRSA (1.5.0):
     - SwiftyRSA/ObjC (= 1.5.0)
   - SwiftyRSA/ObjC (1.5.0)
-  - TTCPay (0.0.1):
+  - TTCPay (0.0.2):
     - Alamofire
     - CryptoSwift (= 0.10.0)
     - SwiftProtobuf (= 1.2.0)
@@ -40,7 +40,7 @@ SPEC CHECKSUMS:
   SwiftLint: 7f5f7de0da74a649b16616cb5246ae323489656e
   SwiftProtobuf: 91a9856079044ef4ec762b2344c763cd9e5a73c1
   SwiftyRSA: 6e528fb1b1a87d5111c48081083b141d6d65f1cf
-  TTCPay: eda3ceb67c8bbcc446f771601afb95b85cb5b99c
+  TTCPay: 5294b4995c2956d2e5aa79c02cdb4cde7993c3e5
 
 PODFILE CHECKSUM: 9ddb82b2127ae92d1e21ae7ba4d33a67c5bdc0f6
 
