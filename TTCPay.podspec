@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
 s.name             = 'TTCPay'
-s.version          = '0.0.1'
+s.version          = '0.0.2'
 s.summary          = 'TTCPay'
 s.homepage         = 'https://github.com/TTCECO'
 s.license          = { :type => 'MIT', :file => 'LICENSE' }
