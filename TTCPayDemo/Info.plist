@@ -25,7 +25,7 @@
 			<string>demoIdentifier</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>PayDemo</string>
+				<string>TTC-eco.ttc.sdk.payDemo</string>
 			</array>
 		</dict>
 	</array>
