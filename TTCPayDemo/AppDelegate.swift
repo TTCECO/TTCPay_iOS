@@ -18,12 +18,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        TTCPay.shared.appId = "MeiTuan"
-        TTCPay.shared.secretKey = "f0ec9e54bded7d60838f8d39c12e1db2"
+//        TTCPay.shared.appId = "MeiTuan"
+//        TTCPay.shared.secretKey = "f0ec9e54bded7d60838f8d39c12e1db2"
         
-//        TTCPay.shared.appId = "TTCMallDemo"
-//        TTCPay.shared.secretKey = "6d1b957a8df22a935987b7e761b3d368"
-//        TTCPay.setEnvironment(environment: 2)
+        TTCPay.shared.appId = "TTCMallDemo"
+        TTCPay.shared.secretKey = "6d1b957a8df22a935987b7e761b3d368"
+        TTCPay.setEnvironment(environment: 2)
         
         TTC.shared.fetchPrice()
         
