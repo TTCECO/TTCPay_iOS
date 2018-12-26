@@ -37,7 +37,7 @@ class TTCCheckoutViewController: TTCBaseViewController {
         get {
             return [
             TTCPayment(name: "Paypal", imageName: "Paypal"),
-            TTCPayment(name: "TTC Connect", imageName: "TTC"),
+            TTCPayment(name: "TTC Pay", imageName: "TTC"),
             TTCPayment(name: "Apple Pay", imageName: "ApplePay"),
             TTCPayment(name: "Mastercard", imageName: "MasterCard")]
         }
@@ -106,7 +106,7 @@ extension TTCCheckoutViewController {
     
     @objc func payment() {
         
-        if currentPay?.name == "TTC Connect", let order = order {
+        if currentPay?.name == "TTC Pay", let order = order {
             
             let createOrder = TTCCreateOrder()
             createOrder.appId = TTCPay.shared.appId
@@ -188,7 +188,7 @@ extension TTCCheckoutViewController: UITableViewDelegate {
         view.addSubview(paymentButton)
         
         switch payment.name {
-        case "TTC Connect":
+        case "TTC Pay":
             paymentButton.backgroundColor = UIColor.appBlue
             
             if let order = order, TTCPrice != 0 {

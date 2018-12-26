@@ -27,7 +27,7 @@ class TTCCheckoutTableViewCell: UITableViewCell {
         }
         
         switch payment?.name {
-        case "TTC Connect":
+        case "TTC Pay":
             selectView.backgroundColor = UIColor.appBlue
 //        case "Mastercard":
 //            selectView.backgroundColor = UIColor.appGray
