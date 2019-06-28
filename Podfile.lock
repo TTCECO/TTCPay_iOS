@@ -1,47 +1,30 @@
 PODS:
-  - Alamofire (4.8.0)
   - BigInt (3.1.0):
     - SipHash (~> 1.2)
-  - CryptoSwift (0.10.0)
   - SipHash (1.2.2)
   - SwiftLint (0.28.1)
-  - SwiftProtobuf (1.2.0)
   - SwiftyRSA (1.5.0):
     - SwiftyRSA/ObjC (= 1.5.0)
   - SwiftyRSA/ObjC (1.5.0)
-  - TTCPay (0.0.4):
-    - Alamofire
-    - CryptoSwift (= 0.10.0)
-    - SwiftProtobuf (= 1.2.0)
-    - SwiftyRSA
 
 DEPENDENCIES:
   - BigInt (~> 3.0)
   - SwiftLint (= 0.28.1)
   - SwiftyRSA
-  - TTCPay
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - Alamofire
     - BigInt
-    - CryptoSwift
     - SipHash
     - SwiftLint
-    - SwiftProtobuf
     - SwiftyRSA
-    - TTCPay
 
 SPEC CHECKSUMS:
-  Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
   BigInt: 76b5dfdfa3e2e478d4ffdf161aeede5502e2742f
-  CryptoSwift: 6c778d69282bed3b4e975ff97a79d074f20bb011
   SipHash: fad90a4683e420c52ef28063063dbbce248ea6d4
   SwiftLint: 7f5f7de0da74a649b16616cb5246ae323489656e
-  SwiftProtobuf: 91a9856079044ef4ec762b2344c763cd9e5a73c1
   SwiftyRSA: 6e528fb1b1a87d5111c48081083b141d6d65f1cf
-  TTCPay: f4fea98126ef1282e46d69170ccbaaeb468aa01d
 
-PODFILE CHECKSUM: 9ddb82b2127ae92d1e21ae7ba4d33a67c5bdc0f6
+PODFILE CHECKSUM: 996c2127406329eada2e24737bc3e4ec39fe6b78
 
-COCOAPODS: 1.6.0.beta.2
+COCOAPODS: 1.7.1

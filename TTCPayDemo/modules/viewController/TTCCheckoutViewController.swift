@@ -38,6 +38,7 @@ class TTCCheckoutViewController: TTCBaseViewController {
             return [
             TTCPayment(name: "Paypal", imageName: "Paypal"),
             TTCPayment(name: "TTC Pay", imageName: "TTC"),
+            TTCPayment(name: "ACN Pay", imageName: "ACN"),
             TTCPayment(name: "Apple Pay", imageName: "ApplePay"),
             TTCPayment(name: "Mastercard", imageName: "MasterCard")]
         }
@@ -92,7 +93,7 @@ class TTCCheckoutViewController: TTCBaseViewController {
 extension TTCCheckoutViewController {
     
     func fetchTTCPrice() {
-        TTCPay.shared.fetchPrice(currencyType: 2) { (success, price, error) in
+        TTCPay.shared.fetchPrice(currencyType: 2, currencyID: 0) { (success, price, error) in
             if success, let ttcprice = price, let ttcDouble = Double(ttcprice) {
                 TTC.shared.TTCPrice = ttcDouble
                 self.TTCPrice = ttcDouble
@@ -106,7 +107,7 @@ extension TTCCheckoutViewController {
     
     @objc func payment() {
         
-        if currentPay?.name == "TTC Pay", let order = order {
+        if (currentPay?.name == "TTC Pay" || currentPay?.name == "ACN Pay"), let order = order {
             
             let createOrder = TTCCreateOrder()
             createOrder.appId = TTCPay.shared.appId
@@ -114,6 +115,12 @@ extension TTCCheckoutViewController {
             createOrder.expireTime = order.expireTime // 15分钟
             createOrder.description_p = order.description_p
             createOrder.outTradeNo = order.outTradeNo
+            if currentPay?.name == "TTC Pay" {
+                createOrder.payType = 0
+            } else {
+                createOrder.payType = 1
+            }
+            
             let total = Double(order.totalFee)/TTCPrice/100000
             createOrder.totalFee = EtherNumberFormatter.shared.number(from: "\(total)")?.description ?? ""
             
@@ -208,7 +215,26 @@ extension TTCCheckoutViewController: UITableViewDelegate {
                 }
                 paymentButton.setTitle(text, for: .normal)
             }
+        case "ACN Pay":
+            paymentButton.backgroundColor = UIColor.appBlue
             
+            if let order = order, TTCPrice != 0 {
+                
+                let total = Double(order.totalFee)/TTCPrice/100000
+                let numberFormatter = NumberFormatter()
+                numberFormatter.maximumFractionDigits = 6
+                numberFormatter.minimumIntegerDigits = 1
+                
+                let totalString = numberFormatter.string(from: NSNumber(value: total))
+                var text = ""
+                
+                if let string = totalString {
+                    text = "Pay \(string) ACN"
+                } else {
+                    text = "Pay \(total) ACN"
+                }
+                paymentButton.setTitle(text, for: .normal)
+            }
         default:
             
             paymentButton.backgroundColor = UIColor.appRed

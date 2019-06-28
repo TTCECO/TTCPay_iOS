@@ -15,7 +15,7 @@ class TTC: NSObject {
     var TTCPrice: Double = 0
     
     func fetchPrice() {
-        TTCPay.shared.fetchPrice(currencyType: 2) { (success, price, error) in
+        TTCPay.shared.fetchPrice(currencyType: 2, currencyID: 0) { (success, price, error) in
             if success {
                 self.TTCPrice = Double(price!) ?? 0
             }
