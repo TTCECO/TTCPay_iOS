@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
 s.name             = 'TTCPay'
-s.version          = '0.1.1'
+s.version          = '0.1.2'
 s.summary          = 'TTCPay'
 s.homepage         = 'https://github.com/TTCECO'
 s.license          = { :type => 'MIT', :file => 'LICENSE' }
@@ -23,8 +23,8 @@ s.ios.deployment_target = '9.0'
 s.frameworks = "Foundation", 'UIKit'
 s.vendored_frameworks = 'TTCPay/TTCPay.framework'
 
-s.dependency 'SwiftProtobuf', '1.2.0'
-s.dependency 'CryptoSwift', '0.10.0'
+s.dependency 'SwiftProtobuf', '1.0.3'
+s.dependency 'CryptoSwift'
 s.dependency 'SwiftyRSA'
 s.dependency 'Alamofire'
 
